@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script type="text/javascript" src="../js/read.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("navbar.html");
+      });
+    </script>
+</head>
+<body>
+        
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <h1>Read page</h1>
+    <button onclick="display_penns()">Get penns</button>
+
+    <div id="penns"></div>
+
+</body>
+</html>

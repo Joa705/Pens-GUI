@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script type="text/javascript" src="../js/create.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("navbar.html");
+      });
+    </script>
+</head>
+<body>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+    <form >
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value=""><br><br>
+        <label for="type">Type:</label><br>
+        <input type="text" id="type" name="type" value=""><br><br>
+        <label for="color">Color:</label><br>
+        <input type="text" id="color" name="color" value=""><br><br>
+        <label for="firma">Type:</label><br>
+        <input type="text" id="firma" name="firma" value=""><br><br>
+
+        <input type="submit" value="Submit" onclick="create()">
+    </form>
+
+
+</body>
+</html>
