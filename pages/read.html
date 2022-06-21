@@ -11,13 +11,27 @@
       });
     </script>
 </head>
-<body>
+<body onload="read_on_pageload()">
         
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
 
-    <h1>Read page</h1>
-    <button onclick="display_penns()">Get penns</button>
+
+    <!--Search bar-->
+    <div id="search-bar">
+        <input type="text" id='search-bar-text' placeholder="Search...">
+        <button onclick="fetch_penns_by_query()">Search</button>
+        
+        <div id="query-holder">
+            <label for="query">Search by</label>
+            <select name="query" id="query">
+                <option value="name" selected>Name</option>
+                <option value="color">Color</option>
+                <option value="firma">Firma</option>
+            </select>
+        </div>
+    </div>
+    
 
     <div id="penns"></div>
 
